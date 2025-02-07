@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // Modules
+    "baseUrl": ".",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "lib",
+
+    // Interop constraints
+    "esModuleInterop": true,
+
+    // Language and environment
+    "target": "ES6",
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts"]
+}
