@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    // Modules
+    "baseUrl": ".",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+
+    // Emit
+    "declaration": false,
+    "declarationMap": false,
+    "outDir": "dist",
+
+    // Interop constraints
+    "esModuleInterop": true,
+
+    // Language and environment
+    "target": "ESNext",
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["glob.d.ts", "src/**/*.ts"]
+}

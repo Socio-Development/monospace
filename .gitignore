@@ -1,0 +1,9 @@
+*.log
+
+.env
+.nx
+
+coverage
+dist
+lib
+node_modules

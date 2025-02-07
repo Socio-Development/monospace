@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    // Type checking
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "strict": true,
+
+    // Interop constraints
+    "forceConsistentCasingInFileNames": true
+  }
+}
