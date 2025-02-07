@@ -6,6 +6,15 @@ validateEnv()
 const app = express()
 const port = process.env.AUTH_SERVICE_PORT as string
 
+// Logger middleware
+app.use((req, res, next) => {
+  const time = Date.now()
+  res.on('finish', () => {
+    console.log(`${req.method} ${req.path} ${res.statusCode} ${Date.now() - time}ms`)
+  })
+  next()
+})
+
 app.get('/health', (req, res) => {
   res.send('OK')
 })
