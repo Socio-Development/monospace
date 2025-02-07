@@ -1,4 +1,7 @@
 import express from 'express'
+import { validateEnv } from './config/env.js'
+
+validateEnv()
 
 const app = express()
 const port = process.env.PORT || 8081
