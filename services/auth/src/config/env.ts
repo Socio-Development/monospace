@@ -1,4 +1,5 @@
 const requiredVariables = [
+  'AUTH_SERVICE_PORT',
   'SURREAL_URL'
 ]
 
