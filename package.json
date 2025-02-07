@@ -3,9 +3,9 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
-    "dev": "lerna run dev --parallel",
+    "dev": "lerna run dev",
     "format": "lerna run format",
-    "test": "lerna run test --parallel"
+    "test": "lerna run test"
   },
   "engines": {
     "pnpm": ">=10"
