@@ -7,21 +7,16 @@
     "build": "rm -rf dist && tsc",
     "dev": "op run --env-file=../../.env -- tsx --watch src/main.ts",
     "format": "prettier --ignore-path ../../.prettierignore --config ../../.prettierrc --write .",
-    "lint": "eslint",
     "start": "node dist/main.js"
   },
   "dependencies": {
     "express": "catalog:"
   },
   "devDependencies": {
-    "@eslint/js": "catalog:",
     "@types/express": "catalog:",
     "@types/node": "catalog:",
-    "eslint": "catalog:",
-    "globals": "catalog:",
     "prettier": "catalog:",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "typescript-eslint": "catalog:"
+    "typescript": "catalog:"
   }
 }
